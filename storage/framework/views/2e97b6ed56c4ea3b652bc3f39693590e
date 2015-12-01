@@ -1,0 +1,18 @@
+<?php $__env->startSection('content'); ?>
+
+    <div class="Logo">
+
+    </div>
+
+
+    <div class="LoginWindow">
+        <h1>Bienvenue !</h1>
+        <input type="button" class="LoginButton" id="LoginBID" onclick="location.href='<?php echo e(route('login')); ?>';" value="Login" />
+        <br />
+        <!--<p><a href="<?php echo e(route('login')); ?>">Login</a></p>-->
+        <input type="button" class="LoginButton" id="SigninBID" onclick="location.href='<?php echo e(route ('creation')); ?>';" value="Création du compte" />
+        <!--<p><a href="<?php echo e(route ('creation')); ?>">Création de compte</a></p>-->
+        <p>Connectez-vous ou créez un compte !</p>
+    </div>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('../master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

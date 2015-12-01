@@ -1,0 +1,10 @@
+<?php $__env->startSection('content'); ?>
+
+    <p>
+        Bienvenue sur votre page de TODO personnels.
+    </p>
+
+    <p><a href="<?php echo e(route('logout')); ?>"> Logout </a></p>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('../master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

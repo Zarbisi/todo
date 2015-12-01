@@ -1,0 +1,10 @@
+<?php $__env->startSection('content'); ?>
+
+    <div id="LoginWindow">
+        <input type="button" onclick="location.href='<?php echo e(route('login')); ?>';" value="Login" />
+        <!--<p><a href="<?php echo e(route('login')); ?>">Login</a></p>-->
+        <input type="button" onclick="location.href='<?php echo e(route ('creation')); ?>';" value="Création du compte" />
+        <!--<p><a href="<?php echo e(route ('creation')); ?>">Création de compte</a></p>-->
+    </div>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('../master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

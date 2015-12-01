@@ -1,0 +1,8 @@
+<?php $__env->startSection('content'); ?>
+
+    <p><a href="<?php echo e(route('login')); ?>">Login</a></p>
+
+    <p><a href="<?php echo e(route ('creation')); ?>">Création de compte</a></p>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('../master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

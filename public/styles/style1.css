@@ -1,0 +1,228 @@
+@font-face {
+    font-family: "RobotoCondensed-Bold";
+    src: url("../fonts/RobotoCondensed-Bold.ttf") format('truetype');
+}
+@font-face {
+    font-family: "Roboto-Light";
+    src: url("../fonts/Roboto-Light.ttf") format('truetype');
+}
+
+h1
+{
+    font-family: "RobotoCondensed-Bold";
+    color: #3e87b5;
+}
+body
+{
+    font-family: "Roboto-Light";
+    color: #31445a;
+    background-color: #405d6f;
+}
+
+a
+{
+    text-decoration: none;
+    color: #23528f;
+}
+a:hover
+{
+    color: #23aaaf;
+}
+a:active
+{
+    color: #ffaaaf;
+}
+
+li
+{
+    padding: 0 20px 30px;
+    margin: 8px;
+    vertical-align: middle;
+    background: #6b92aa;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 0.8em;
+    color: white;
+
+    line-height:1.5em;
+    border-bottom:1px solid #ccc;
+    border-top:20px solid #425663;
+
+    float:left;
+    display:inline;
+    text-align: center;
+    overflow-x: auto;
+    max-width: 512px;
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+li:hover
+{
+    background: #7aa6c1;
+}
+ul
+{
+    list-style-type: none;
+    overflow:hidden;
+    vertical-align: middle;
+    text-align: center;
+    margin: 50px;
+}
+#footer1
+{
+    padding: 1px;
+    width: 512px;
+    height: auto;
+    min-height: 100% !important;
+    background-color: white;
+    margin: 10px auto 10px auto;
+    text-align: center;
+    font-size: 0.8em;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    border-radius: 16px;
+}
+
+#MainContainer
+
+{
+    display: table;
+    position: absolute;
+    width: 99%;
+    height: 99%;
+}
+
+#Cont1
+{
+    /*display: table-cell;
+    vertical-align: middle;*/
+}
+
+.LoginWindow
+{
+    padding: 1px;
+    width: 512px;
+    height: auto;
+    min-height: 100% !important;
+    background-color: white;
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    border-radius: 16px;
+    overflow: auto;
+}
+.ProjectsExplorer
+{
+    padding: 1px;
+    width: 840px;
+    height: auto;
+    min-height: 100% !important;
+    background-color: #567588;
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    border-radius: 16px;
+    overflow: auto;
+}
+.LoginButton
+{
+    width: 360px;
+    height: 48px;
+    margin: 10px;
+
+    -moz-box-shadow:inset 0px 1px 0px 0px #bee2f9;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #bee2f9;
+    box-shadow:inset 0px 1px 0px 0px #bee2f9;
+    background-color:#468ccf;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+    border:1px solid #3866a3;
+    display:inline-block;
+    cursor:pointer;
+    color:#14396a;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:6px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #7cacde;
+}
+
+.LoginButton:hover
+{
+    background-color:#63b8ee;
+}
+.LoginButton:active {
+    position:relative;
+    top:2px;
+}
+.LoginButton#SigninBID
+{
+    background-color:#38a363;
+    border:1px solid #37ae64;
+    color:#254934;
+    text-shadow:0px 1px 0px #7cc499;
+}
+.LoginButton#SigninBID:hover
+{
+    background-color:#4ac17a;
+}
+.LoginButton#SigninBID:active {
+    position:relative;
+    top:2px;
+}
+.LoginButton#CreateBID
+{
+    background-color:#d2c26a;
+    border:1px solid #72672a;
+    color:#635a27;
+    text-shadow:0px 1px 0px #c3b777;
+}
+.LoginButton#CreateBID:hover
+{
+    background-color:#e0d079;
+}
+.LoginButton#CreateBID:active
+{
+    position:relative;
+    top:2px;
+}
+.Logo
+{
+    background-image: url("../medias/images/GUI/otterdologo.png");
+    background-size: 344px 165px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 344px;
+    height: 165px;
+    margin: 0 auto 20px auto;
+    cursor: pointer
+}
+.form-control
+{
+    width: 352px;
+    height: 32px;
+}
+.RedAlert
+{
+    color: #B30000;
+}
+.Box1
+{
+    font-size: 16px;
+}
+
+.NoItemsMsg
+{
+    color: white;
+    font-size: 18px;
+}

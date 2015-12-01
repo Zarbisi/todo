@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+</head>
+<body>
+<?php echo $__env->yieldContent('content'); ?>
+
+<style type="text/css">
+
+    body
+    {
+        color: white;
+        background-color: #31b0d5;
+    }
+
+</style>
+
+<footer>
+    <p>Projet "TODO-list"</p>
+    <p>Palmeri Raphael & Vrionis Mathieu</p>
+    <p>2015 - 2016</p>
+</footer>
+
+</body>
+</html>

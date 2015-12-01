@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>ToDo</title>
+    <!--<link rel="StyleSheet" href="style1.css" type="text/css" />-->
+    <?php echo Html::style('styles/style1.css'); ?>
+
+    <?php echo Html::script('scripts/jquery.js'); ?>
+
+    <?php echo Html::script('scripts/script1.js'); ?>
+
+
+</head>
+<body>
+
+<!-- ATTENTION, j'ai viré ce bloc de code puisque l'erreur est quand même reprise notamment lors de l'authentification -->
+<!--
+<?php if(Session::has('message')): ?>
+    <div class="flash alert-info">
+        <p><?php echo e(Session::get('message')); ?></p>
+    </div>
+<?php endif; ?>
+<?php if($errors->any()): ?>
+        <div class="flash alert-danger">
+                <?php foreach( $errors->all() as $error ): ?>
+                        <p><?php echo e($error); ?></p>
+                <?php endforeach; ?>
+        </div>
+<?php endif; ?>
+        -->
+<div id="MainContainer">
+    <div id="Cont1">
+        <?php echo $__env->yieldContent('content'); ?>
+
+        <footer id="footer1">
+            <p>Projet "OtterDo" <br />
+            Palmeri Raphael & Vrionis Mathieu <br />
+            2015 - 2016</p>
+        </footer>
+    </div>
+</div>
+</body>
+</html>

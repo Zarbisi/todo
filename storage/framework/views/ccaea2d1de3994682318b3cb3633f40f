@@ -1,0 +1,41 @@
+<?php $__env->startSection('content'); ?>
+
+    <div class="Logo">
+
+    </div>
+    <div class="ProjectsExplorer">
+    <h1 style="color: #c4dbea">Projets</h1>
+
+    <?php if( !$projects->count()): ?>
+            <p class="NoItemsMsg">Vous n'avez pas encore de projet ! :'( </p>
+    <?php else: ?>
+
+        <ul>
+            <?php foreach( $projects as $project ): ?>
+                <li>
+                    <?php echo Form::open(array('class' => 'form-inline', 'method' => 'DELETE', 'route' => array('projects.destroy', $project->slug))); ?>
+
+                    <a href="<?php echo e(route('projects.show', $project->slug)); ?>" class="Box1"><?php echo e($project->name); ?></a>
+                    <br/>
+                    (
+                    <?php echo link_to_route('projects.edit', 'Edit', array($project->slug), array('class' => 'btn btn-info')); ?>,
+                    <?php echo Form::submit('Delete', array('class' => 'btn btn-danger')); ?>
+
+                    )
+                    <?php echo Form::close(); ?>
+
+                </li>
+            <?php endforeach; ?>
+        </ul>
+
+    <?php endif; ?>
+    <!-- J'ai remplacé le p par un bouton plus propre laul
+    <p>
+        <?php echo link_to_route('projects.create', 'Create Project'); ?>
+
+    </p>-->
+        <input type="button" class="LoginButton" id="CreateBID" onclick="location.href='<?php echo e(route('projects.create')); ?>';" value="Nouveau Projet" />
+
+    </div>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('../master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
